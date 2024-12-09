@@ -4,13 +4,18 @@
   --secondary: #050840;
   --highlight-primary: #7ce7c9;
   --highlight-secondary: #9d7beb;
+  --donkergroen: #018e48;
+  --lichtblauw: #74bdeb;
+  --geel: #f2f84e;
   --radius: 0.5rem;
   --pill: 2rem;
   --line: 0.1rem;
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 2rem;
   padding: 0;
@@ -18,9 +23,11 @@ body {
   font-size: 2rem;
   background: var(--secondary);
 }
+
 section {
   max-width: 90vw;
 }
+
 a {
   display: inline-block;
   margin: 0.2em;
@@ -32,6 +39,7 @@ a {
   font-weight: normal;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--primary);
   border-color: var(--primary);
@@ -58,24 +66,148 @@ a:nth-of-type(12) {
   0% {
     transform: scale(1, 1) translateY(0);
   }
+
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
+
   30% {
     transform: scale(0.9, 1.1) translateY(-5rem) rotate(10deg);
   }
+
   50% {
     transform: scale(1.05, 0.95) translateY(0);
   }
+
   57% {
     transform: scale(1, 1) translateY(-0.5rem) rotate(-2deg);
   }
+
   64% {
     transform: scale(1, 1) translateY(0);
   }
+
   100% {
     transform: scale(1, 1) translateY(0);
   }
 }
 
 /* Jouw animaties */
+
+
+
+/*design*/
+a:nth-of-type(2) {
+  position: relative;
+  background: var(--lichtblauw);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+@keyframes bibberen {
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.bibberen {
+  animation-name: bibberen;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+}
+
+
+/*user*/
+a:nth-of-type(9) {
+  position: relative;
+  background: var(--lichtblauw);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.rotate {
+  rotate: 180deg;
+}
+
+
+
+/*code*/
+a:nth-of-type(20) {
+  position: relative;
+  background: var(--lichtblauw);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.width {
+  width: 6em;
+}
+
+
+
+/*labels*/
+a:nth-of-type(17) {
+  position: relative;
+  background: var(--lichtblauw);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.sqush {
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes bounce {
+
+    0% {
+      transform: translateY(0) scaleY(1);
+    }
+  
+    40% {
+      transform: translateY(-50px) scaleY(1.5);
+    }
+  
+    60% {
+      transform: translateY(-100px) scaleY(1);
+    }
+  
+    80% {
+      transform: translateY(50) scaleY(0.5);
+    }
+  
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
+
+
+  /*flow*/
+  a:nth-of-type(8){
+    position: relative;
+    background: var(--lichtblauw);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  
