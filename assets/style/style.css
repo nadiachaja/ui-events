@@ -210,4 +210,8 @@ a:nth-of-type(17) {
     border-color: var(--secondary);
   }
 
+  .weg-flow{
+    display: none;
+  }
+  
   

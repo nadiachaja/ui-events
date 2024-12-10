@@ -50,9 +50,11 @@ function squshHandler(){
 }
 
 
-let shift = document.querySelector('a:nth-of-type(8)')
+let weg = document.querySelector('a:nth-of-type(8)')
 
- 
+weg.addEventListener('click', wegHandler)
 
-
+function wegHandler(){
+  weg.classList.toggle('weg-flow')
+}
 
