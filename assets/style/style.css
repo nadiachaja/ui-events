@@ -214,4 +214,19 @@ a:nth-of-type(17) {
     display: none;
   }
   
+
+  /*fix*/
+  a:nth-of-type(6){
+    position: relative;
+    background: var(--lichtblauw);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+
+  .scale{
+    transform: scale(2);
+    transition: 1s ease;
+  }
+
+
   

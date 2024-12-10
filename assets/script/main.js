@@ -58,3 +58,15 @@ function wegHandler(){
   weg.classList.toggle('weg-flow')
 }
 
+
+
+let big = document.querySelector('a:nth-of-type(6)')
+
+big.addEventListener('mouseover', () => {
+  big.classList.add('scale');
+});
+
+big.addEventListener('mouseleave', () => {
+  big.classList.remove('scale');
+});
+
