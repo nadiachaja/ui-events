@@ -70,3 +70,36 @@ big.addEventListener('mouseleave', () => {
   big.classList.remove('scale');
 });
 
+
+
+let bottom = document.querySelector('a:nth-of-type(19)')
+
+bottom.addEventListener('click', bottomHandler)
+
+function bottomHandler(){
+  bottom.classList.toggle('bottom')
+}
+
+
+
+let wobble = document.querySelector('a:nth-of-type(11)')
+
+wobble.addEventListener('mouseover', () => {
+  wobble.classList.add('wobble');
+});
+
+wobble.addEventListener('mouseleave', () => {
+  wobble.classList.remove('wobble');
+});
+
+
+
+let onder = document.querySelector('a:nth-of-type(14)')
+
+onder.addEventListener('mouseover', () => {
+  onder.classList.add('onder');
+});
+
+onder.addEventListener('mouseleave', () => {
+  onder.classList.remove('onder');
+});
