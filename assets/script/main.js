@@ -108,8 +108,16 @@ let kleur = document.querySelector('a:nth-of-type(16)')
 
 kleur.addEventListener('click', kleurHandler)
 
-
 function kleurHandler(){
-  console.log(kleur)
   kleur.classList.toggle('kleur')
 }
+
+
+
+let key = document.querySelector('a:nth-of-type(10)')
+
+addEventListener('keydown', function(e) {
+  if (e.key == "z" && e.metaKey == true) {
+    console.log("doe iets");
+  }
+})
