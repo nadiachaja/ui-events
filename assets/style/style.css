@@ -60,6 +60,7 @@ a:nth-of-type(12) {
   animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
   animation-duration: 1.2s;
   animation-iteration-count: 1;
+  background: pink;
 }
 
 @keyframes jump {
@@ -141,9 +142,11 @@ a:nth-of-type(9) {
   background: var(--lichtblauw);
   color: var(--secondary);
   border-color: var(--secondary);
+  transition: 1.5s ease;
 }
 
 .rotate {
+  transition: 1.5s ease;
   rotate: 180deg;
 }
 
@@ -155,9 +158,11 @@ a:nth-of-type(20) {
   background: var(--lichtblauw);
   color: var(--secondary);
   border-color: var(--secondary); 
+  transition: 1s ease;
 }
 
 .width {
+  transition: 1s ease;
   width: 6em;
 }
 
@@ -223,6 +228,7 @@ a:nth-of-type(17) {
     background: var(--lichtblauw);
     color: var(--secondary);
     border-color: var(--secondary);
+    transition: 1s ease;
   }
 
   .scale{
@@ -239,6 +245,7 @@ a:nth-of-type(17) {
     background: var(--lichtblauw);
     color: var(--secondary);
     border-color: var(--secondary);
+    transition: 3s ease;
   }
 
   .bottom{
@@ -278,7 +285,7 @@ a:nth-of-type(11).wobble{
     background: var(--lichtblauw);
     color: var(--secondary);
     border-color: var(--secondary);
-    position: relative;
+    transition: 1.5s ease;
   }
 
   .onder{
@@ -287,3 +294,19 @@ a:nth-of-type(11).wobble{
     top: 9em;
     right: 25em;
   }
+
+
+/*feedforward*/
+  a:nth-of-type(16){
+    background: var(--lichtblauw);
+    color: var(--secondary);
+    border-color: var(--secondary);
+    transition: 1s ease;
+  }
+
+  a.kleur{
+    transition: 1s ease;
+    background: #98d83f;
+  }
+
+  

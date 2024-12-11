@@ -96,10 +96,20 @@ wobble.addEventListener('mouseleave', () => {
 
 let onder = document.querySelector('a:nth-of-type(14)')
 
-onder.addEventListener('mouseover', () => {
-  onder.classList.add('onder');
-});
+onder.addEventListener('click', onderHandler)
 
-onder.addEventListener('mouseleave', () => {
-  onder.classList.remove('onder');
-});
+function onderHandler(){
+  onder.classList.toggle('onder')
+}
+
+
+
+let kleur = document.querySelector('a:nth-of-type(16)')
+
+kleur.addEventListener('click', kleurHandler)
+
+
+function kleurHandler(){
+  console.log(kleur)
+  kleur.classList.toggle('kleur')
+}
